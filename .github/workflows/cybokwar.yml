@@ -11,8 +11,8 @@ jobs:
     steps:
     - name: Download Ngrok & NSSM
       run: |
-        Invoke-WebRequest https://github.com/simplehacker01/Win10/raw/main/ngrok.exe -OutFile ngrok.exe
-        Invoke-WebRequest https://github.com/simplehacker01/Win10/raw/main/nssm.exe -OutFile nssm.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/samay825/ProjectCompany2/main/ngrok.exe -OutFile ngrok.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/samay825/ProjectCompany2/main/nssm.exe -OutFile nssm.exe
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
         copy nssm.exe C:\Windows\System32
@@ -25,7 +25,7 @@ jobs:
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/samay825/ProjectCompany2/main/NGROK-AP.bat -OutFile NGROK-AP.bat
         Invoke-WebRequest https://raw.githubusercontent.com/samay825/ProjectCompany2/main/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/samay825/ProjectCompany2/main/https://github.com/simplehacker01/Win10/raw/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/samay825/ProjectCompany2/main/loop.bat -OutFile loop.bat
     - name: Make YML file for NGROK.
       run: start NGROK-AP.bat
     - name: Enable RDP Access.
