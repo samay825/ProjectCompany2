@@ -1,10 +1,10 @@
 @echo off
 del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk" > out.txt 2>&1
-net config server /srvcomment:"Simple Hacker1 VPS" > out.txt 2>&1
+net config server /srvcomment:"Samay Nitin VPS" > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
-curl -O https://raw.githubusercontent.com/vongocbao/WindowsRDP/main/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/vongocbao/WindowsRDP/main/FastConfigVPS_v5.1.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\EVKey Vietnamese Keyboard.exe" https://raw.githubusercontent.com/vongocbao/WindowsRDP/main/EVKey64.exe > out.txt 2>&1
+curl -O https://raw.githubusercontent.com/samay825/ProjectCompany2/main/DisablePasswordComplexity.ps1 > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/samay825/ProjectCompany2/main/FastConfigVPS_v5.1.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\EVKey Vietnamese Keyboard.exe" https://raw.githubusercontent.com/samay825/ProjectCompany2/main/EVKey64.exe > out.txt 2>&1
 net user SamayNitin @#SamayN@. /add >nul
 net localgroup administrators SamayNitin /add >nul
 net user SamayNitin /active:yes >nul
